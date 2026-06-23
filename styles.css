@@ -657,7 +657,9 @@ address {
 @media (max-width: 860px) {
   .site-header {
     position: absolute;
-    align-items: flex-start;
+    align-items: center;
+    min-height: 76px;
+    padding: 12px 18px;
   }
 
   .nav-links {
@@ -670,12 +672,13 @@ address {
   }
 
   .hero {
-    min-height: 92svh;
+    min-height: 88svh;
   }
 
   .hero-content {
-    width: min(100% - 32px, 680px);
+    width: min(100% - 36px, 680px);
     margin: 0 auto;
+    padding-top: 86px;
   }
 
   .intro,
@@ -699,7 +702,9 @@ address {
 
 @media (max-width: 560px) {
   .header-cta {
-    padding: 10px 14px;
+    min-height: 44px;
+    padding: 10px 16px;
+    font-size: 1rem;
   }
 
   .brand-title {
@@ -707,15 +712,18 @@ address {
   }
 
   .brand-logo {
-    width: 150px;
+    width: 142px;
+    max-height: 58px;
+    object-fit: contain;
   }
 
   .hero-content {
-    padding-top: 104px;
+    padding-top: 82px;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.62rem;
+    line-height: 1.02;
   }
 
   h2 {
@@ -724,11 +732,33 @@ address {
 
   .button {
     width: 100%;
+    min-height: 48px;
+    padding: 12px 18px;
   }
 
   .hero-facts span,
   .hero-actions {
     width: 100%;
+  }
+
+  .hero-copy {
+    margin-top: 18px;
+    font-size: 1.02rem;
+    line-height: 1.48;
+  }
+
+  .hero-actions {
+    margin-top: 26px;
+  }
+
+  .hero-facts {
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  .hero-facts span {
+    padding: 11px 14px;
+    font-size: 0.98rem;
   }
 
   .gallery-button {
